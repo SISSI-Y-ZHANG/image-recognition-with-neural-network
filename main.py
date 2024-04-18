@@ -108,13 +108,6 @@ def predict(images, W1, W2, B1, B2):
 def main():
     W1, B1, W2, B2 = gradient_descent(training_data, 30, 10, 3, test_data)
     sample_data = training_data[10:20]
-    
-    # pre-trained parameters
-    '''
-    with open("parameters.npy", mode="rb") as r:
-        parameters = np.load(r, allow_pickle=True)
-        W1, B1, W2, B2 = parameters
-    '''
 
     predictions = predict(sample_data, W1, W2, B1, B2)
     print(predictions)
