@@ -5,7 +5,6 @@ import random
 
 training_data, validation_data, test_data = load_data_wrapper()
 
-
 ######################################## functions ########################################
 
 # plot one image
